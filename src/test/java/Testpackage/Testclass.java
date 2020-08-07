@@ -29,6 +29,8 @@ public static WebDriver driver;
 		WebElement drago=driver.findElement(By.xpath("//div[@id='draggable']"));
 		WebElement dropo=driver.findElement(By.xpath("//div[@id='droppable']"));
 		
+		WebElement dropodrop=driver.findElement(By.xpath("//div[@id='droppable']"));
+		
 		Actions act=new Actions(driver);
 		//act.dragAndDrop(drago, dropo).perform();
 		act.dragAndDropBy(drago, 50, 50).perform();
